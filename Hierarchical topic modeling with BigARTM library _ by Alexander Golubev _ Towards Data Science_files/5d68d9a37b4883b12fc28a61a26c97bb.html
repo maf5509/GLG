@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://towardsdatascience.com/media/5d68d9a37b4883b12fc28a61a26c97bb -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>metricsBigARTM – Medium</title><meta name="description" content="Instantly share code, notes, and snippets. You can&#39;t perform that action at this time. You signed in with another tab or window. You signed out in another tab or window. Reload to refresh your session. Reload to refresh your session."><meta name="twitter:widgets:csp" content="on"><meta name="robots" content="noindex"><!--<base target="_blank">--><base href="." target="_blank"><style>body {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: "ff-tisa-web-pro", Georgia, Cambria, "Times New Roman", Times, serif; font-weight: 400; color: #333332; font-size: 18px; line-height: 1.4; margin: 0; background-color: white; overflow: hidden;}iframe {max-width: 100%;}</style></head><body><style>.gist .gist-file { margin-bottom: 0 !important; }.gist { text-rendering: auto; }</style><script src="./caf8e99371dcfaf5a975f3d8cebd06cd.js.download" charset="utf-8"></script><link rel="stylesheet" href="./gist-embed-be17d52734db769251e4a7901baa0d2f.css"><div id="gist105350970" class="gist">
+    <div class="gist-file" translate="no">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-metricsbigartm-py" class="file my-2">
+    
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-python  ">
+
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip="">
+      <tbody><tr>
+        <td id="file-metricsbigartm-py-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-metricsbigartm-py-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-k">import</span> <span class="pl-s1">matplotlib</span>.<span class="pl-s1">pyplot</span> <span class="pl-k">as</span> <span class="pl-s1">plt</span></td>
+      </tr>
+      <tr>
+        <td id="file-metricsbigartm-py-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-metricsbigartm-py-LC2" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-metricsbigartm-py-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-metricsbigartm-py-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-k">def</span> <span class="pl-en">print_measures</span>(<span class="pl-s1">model_artm</span>):</td>
+      </tr>
+      <tr>
+        <td id="file-metricsbigartm-py-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-metricsbigartm-py-LC4" class="blob-code blob-code-inner js-file-line">    <span class="pl-en">print</span>(<span class="pl-s">'Sparsity Phi ARTM:{}'</span>.<span class="pl-en">format</span>(<span class="pl-s1">model_artm</span>.<span class="pl-s1">score_tracker</span>[<span class="pl-s">'SparsityPhiScore'</span>].<span class="pl-s1">last_value</span>))</td>
+      </tr>
+      <tr>
+        <td id="file-metricsbigartm-py-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-metricsbigartm-py-LC5" class="blob-code blob-code-inner js-file-line">    <span class="pl-en">print</span>(<span class="pl-s">'Sparsity Theta ARTM:{}'</span>.<span class="pl-en">format</span>(<span class="pl-s1">model_artm</span>.<span class="pl-s1">score_tracker</span>[<span class="pl-s">'SparsityThetaScore'</span>].<span class="pl-s1">last_value</span>))</td>
+      </tr>
+      <tr>
+        <td id="file-metricsbigartm-py-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-metricsbigartm-py-LC6" class="blob-code blob-code-inner js-file-line">    <span class="pl-en">print</span>(<span class="pl-s">'Perplexity ARTM: {}'</span>.<span class="pl-en">format</span>(<span class="pl-s1">model_artm</span>.<span class="pl-s1">score_tracker</span>[<span class="pl-s">'PerplexityScore'</span>].<span class="pl-s1">last_value</span>))</td>
+      </tr>
+      <tr>
+        <td id="file-metricsbigartm-py-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-metricsbigartm-py-LC7" class="blob-code blob-code-inner js-file-line">    </td>
+      </tr>
+      <tr>
+        <td id="file-metricsbigartm-py-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-metricsbigartm-py-LC8" class="blob-code blob-code-inner js-file-line">    <span class="pl-s1">ig</span>, <span class="pl-s1">axs</span> <span class="pl-c1">=</span> <span class="pl-s1">plt</span>.<span class="pl-en">subplots</span>(<span class="pl-c1">1</span>, <span class="pl-c1">3</span>, <span class="pl-s1">figsize</span> <span class="pl-c1">=</span> (<span class="pl-c1">30</span>, <span class="pl-c1">5</span>))</td>
+      </tr>
+      <tr>
+        <td id="file-metricsbigartm-py-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-metricsbigartm-py-LC9" class="blob-code blob-code-inner js-file-line">    </td>
+      </tr>
+      <tr>
+        <td id="file-metricsbigartm-py-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-metricsbigartm-py-LC10" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">for</span> <span class="pl-s1">idx</span>, <span class="pl-s1">score</span>, <span class="pl-s1">y_label</span> <span class="pl-c1">in</span> <span class="pl-en">zip</span>(<span class="pl-en">range</span>(<span class="pl-c1">3</span>), [<span class="pl-s">'PerplexityScore'</span>, <span class="pl-s">'SparsityPhiScore'</span>, <span class="pl-s">'SparsityThetaScore'</span>], [<span class="pl-s">'ARTM perplexity'</span>, <span class="pl-s">'ARTM Phi sparsity'</span>, <span class="pl-s">'ARTM Theta sparsity'</span>]):</td>
+      </tr>
+      <tr>
+        <td id="file-metricsbigartm-py-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-metricsbigartm-py-LC11" class="blob-code blob-code-inner js-file-line">        <span class="pl-s1">axs</span>[<span class="pl-s1">idx</span>].<span class="pl-en">plot</span>(<span class="pl-en">range</span>(<span class="pl-s1">model_artm</span>.<span class="pl-s1">num_phi_updates</span>), <span class="pl-s1">model_artm</span>.<span class="pl-s1">score_tracker</span>[<span class="pl-s1">score</span>].<span class="pl-s1">value</span>, <span class="pl-s">'r--'</span>, <span class="pl-s1">linewidth</span><span class="pl-c1">=</span><span class="pl-c1">2</span>)</td>
+      </tr>
+      <tr>
+        <td id="file-metricsbigartm-py-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-metricsbigartm-py-LC12" class="blob-code blob-code-inner js-file-line">        <span class="pl-s1">axs</span>[<span class="pl-s1">idx</span>].<span class="pl-en">set_xlabel</span>(<span class="pl-s">'Iterations count'</span>)</td>
+      </tr>
+      <tr>
+        <td id="file-metricsbigartm-py-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-metricsbigartm-py-LC13" class="blob-code blob-code-inner js-file-line">        <span class="pl-s1">axs</span>[<span class="pl-s1">idx</span>].<span class="pl-en">set_ylabel</span>(<span class="pl-s1">y_label</span>)</td>
+      </tr>
+      <tr>
+        <td id="file-metricsbigartm-py-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-metricsbigartm-py-LC14" class="blob-code blob-code-inner js-file-line">        <span class="pl-s1">axs</span>[<span class="pl-s1">idx</span>].<span class="pl-en">grid</span>(<span class="pl-c1">True</span>)</td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/DJAlexJ/caf8e99371dcfaf5a975f3d8cebd06cd/raw/9f2a517c209e2d3e714dc18e481f4864447de356/metricsBigARTM.py" style="float:right">view raw</a>
+        <a href="https://gist.github.com/DJAlexJ/caf8e99371dcfaf5a975f3d8cebd06cd#file-metricsbigartm-py">metricsBigARTM.py</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+<script>var height = -1; var delayMs = 200; if (document) {document.domain = document.domain;}function notifyResize(height) {height = height ? height : document.documentElement.offsetHeight; var resized = false; if (window.donkey && donkey.resize) {donkey.resize(height);var elements = document.getElementsByClassName("gist-data"); for (var i = 0; i < elements.length; i++) {elements[i].style.overflow = "visible"}resized = true;}if (parent && parent._resizeIframe) {var obj = {iframe: window.frameElement, height: height}; parent._resizeIframe(obj); resized = true;}if (window.location && window.location.hash === "#amp=1" && window.parent && window.parent.postMessage) {window.parent.postMessage({sentinel: "amp", type: "embed-size", height: height}, "*");}if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.resize) {window.webkit.messageHandlers.resize.postMessage(height); resized = true;}return resized;}function maybeResize() {try {if (document.documentElement.offsetHeight != height && notifyResize()) {height = document.documentElement.offsetHeight;}delayMs = Math.min(delayMs * 2, 1000000); setTimeout(maybeResize, delayMs);} catch(error) {console.log('maybeResize error: ', error)}}maybeResize();</script></body></html>

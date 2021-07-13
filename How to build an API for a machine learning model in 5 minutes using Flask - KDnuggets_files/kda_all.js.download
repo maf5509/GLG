@@ -1,0 +1,82 @@
+function kda_top () {
+var path=kpath + 'aps/';
+var ts=new Date().getTime();
+var ms=new Date().getMilliseconds();
+var Top_nam=new Array(); var Top_ext=new Array(); var Top_wid=new Array(); var Top_hgt=new Array();
+var Top_alt=new Array(); var Top_txt=new Array(); var Top_url=new Array(); var Top_wgt=new Array(); var wgt=0;
+wgt+=1; Top_wgt[1]=wgt;
+Top_nam[1]="t-pny-21m07-podcast"; Top_ext[1]=".jpg"; Top_wid[1]=750; Top_hgt[1]=100;
+Top_url[1]='https://www.pny.com/forms/professional/webinars/dsc-podcast';
+Top_txt[1]="Learn how NVIDIA RTX GPUs bring productivity and faster insight to data science and big data analytics.";
+Top_alt[1]="Learn how NVIDIA RTX GPUs bring productivity and faster insight to data science and big data analytics.";
+wgt+=1; Top_wgt[2]=wgt;
+Top_nam[2]="t-tri-21m05-dataprep"; Top_ext[2]=".jpg"; Top_wid[2]=750; Top_hgt[2]=100;
+Top_url[2]='https://www.trifacta.com/gated-form/data-preparation-for-dummies/?utm_source=kdnuggets';
+Top_txt[2]="Everything you need to know about data prep. Get <em>Data Preparation for Dummies</em> ebook";
+Top_alt[2]="Everything you need to know about data prep. Get <em>Data Preparation for Dummies</em> ebook";
+wgt+=1; Top_wgt[3]=wgt;
+Top_nam[3]="t-jmp-21m06b-jul22stat"; Top_ext[3]=".jpg"; Top_wid[3]=750; Top_hgt[3]=100;
+Top_url[3]='https://www.jmp.com/en_us/events/statistically-speaking/events/july-22/live-stream.html';
+Top_txt[3]="What Value Will Your Text Data Reveal?";
+Top_alt[3]="What Value Will Your Text Data Reveal?";
+wgt+=1; Top_wgt[4]=wgt;
+Top_nam[4]="t-tol-21m07a-tcdl"; Top_ext[4]=".jpg"; Top_wid[4]=750; Top_hgt[4]=100;
+Top_url[4]='https://toloka.ai/?utm_source=kdnuggets&utm_medium=banner&utm_campaign=promo';
+Top_txt[4]="Toloka&nbsp;&nbsp;&nbsp;Take Control of Your Data Labeling";
+Top_alt[4]="Toloka&nbsp;&nbsp;&nbsp;Take Control of Your Data Labeling";
+var rtop=Math.random()*4;
+var n_ad=1; while (Top_wgt[n_ad]<rtop) {n_ad++};
+var out='<table border=0 cellspacing=5 cellpadding=20 width=990><tr><td valign=top align=center width=750>';
+  var whb=' width="90%" border=0';
+  if (Top_wid[n_ad] == 1) {
+      out+=Top_url[n_ad];
+      whb=' width=1 height=1';
+  } else {
+      out+='<a href=' + Top_url[n_ad] + ' onclick="ga(\'send\',\'pageview\',\'/zt/' + Top_nam[n_ad] + '\');" target=_blank>';
+  }
+  out+='<img src=' + path + Top_nam[n_ad] + Top_ext[n_ad] + '?ms=' + ms + whb + ' alt="' + Top_alt[n_ad] + '">';
+  out+='<br><b><font size="+1">' + Top_txt[n_ad] + '</font></b></a></td>';
+  out+='</tr></table><br>';document.writeln(out);}
+function kda_sid_init() {
+var ts=new Date().getTime();
+Sid_nam=new Array(); Sid_ext=new Array(); Sid_txt=new Array(); Sid_url=new Array();
+Sid_alt=new Array(); Sid_wid=new Array(); Sid_hgt=new Array(); Sid_wgt=new Array(); var wgt=0;
+wgt+=1; Sid_wgt[1]=wgt;
+Sid_nam[1]="e-sas-21m03-1vg"; Sid_ext[1]=".gif"; Sid_wid[1]=1; Sid_hgt[1]=1;
+Sid_url[1]='<ins class="dcmads" style="display:inline-block;width:300px;height:250px" data-dcm-placement="N6626.289580.KDNUGGETS.COM/B23482492.298336759" data-dcm-rendering-mode="iframe" data-dcm-https-only data-dcm-ltd="false" data-dcm-resettable-device-id="" data-dcm-app-id=""> <script src="https://www.googletagservices.com/dcm/dcmads.js"></script></ins>';
+Sid_txt[1]="SAS - the only Leader<br><b>8 years running</b><br>for DS and ML<br>Read Gartner Report<br>";
+Sid_alt[1]="SAS - the only Leader <b>8 years running</b><br>for DS and ML<br>Read Gartner Report<br>";
+wgt+=1; Sid_wgt[2]=wgt;
+Sid_nam[2]="e-sas-21m01-2learn"; Sid_ext[2]=".gif"; Sid_wid[2]=1; Sid_hgt[2]=1;
+Sid_url[2]='<ins class="dcmads" style="display:inline-block;width:300px;height:250px" data-dcm-placement="N6626.289580.KDNUGGETS.COM/B23482495.291862872" data-dcm-rendering-mode="iframe" data-dcm-https-only data-dcm-resettable-device-id="" data-dcm-app-id=""> <script src="https://www.googletagservices.com/dcm/dcmads.js"></script></ins>';
+Sid_txt[2]="SAS Talent Development";
+Sid_alt[2]="SAS";
+wgt+=1; Sid_wgt[3]=wgt;
+Sid_nam[3]="e-dom-21m04-chibk"; Sid_ext[3]=".png"; Sid_wid[3]=300; Sid_hgt[3]=250;
+Sid_url[3]='https://domino.buzz/3cp3l8g';
+Sid_txt[3]="Capture the magic<br>of data science for kids.<br>Get a FREE e-book<br>or 50% off hardcopy.<br>Get tonight's bedtime story";
+Sid_alt[3]="A Data Science book for kids";
+wgt+=1; Sid_wgt[4]=wgt;
+Sid_nam[4]="e-kni-21m07a-r44"; Sid_ext[4]=".png"; Sid_wid[4]=300; Sid_hgt[4]=250;
+Sid_url[4]='https://www.knime.com/whats-new-in-knime-44?utm_source=kdnuggets&utm_medium=display&utm_campaign=Release';
+Sid_txt[4]="What's New in<br>KNIME Analytics Platform 4.4<br>and KNIME Server 4.13<br>Learn More";
+Sid_alt[4]="What's New in KNIME Analytics Platform 4.4<br>and KNIME Server 4.13<br>Learn More";
+}
+function kda_sid_write (nads) {
+  if (nads != 0) {nads=1};
+  var path=kpath + 'aps/';
+  var ms=new Date().getMilliseconds(); var adshown=new Array();
+  for (adpos=1; adpos<=nads; adpos++) {
+    do { var adn=1; var re=Math.random()*4;
+      while (Sid_wgt[adn]<re) {adn++};
+    } while (adshown[adn]==1);
+    if (Sid_wid[adn]==1) { s=Sid_url[adn]; s=s.replace('ze/e-','ze/' + nads + adpos + ':e-'); 
+      s+='<img src=' + path + Sid_nam[adn] + '.gif?ms' + ms + ' width=1 height=1 border=0>';
+    } else {
+      s='<a href=' + Sid_url[adn] + ' onclick="ga(\'send\',\'pageview\',\'/ze/' + nads + adpos + ':' + Sid_nam[adn] + '\');" target=_blank>';
+      s+='<img src=' + path + Sid_nam[adn] + Sid_ext[adn] + '?ms' + ms +  ' width=' + Sid_wid[adn] + ' height=' + Sid_hgt[adn] + ' border=0 alt="' + Sid_alt[adn] + '">';}
+    s+='<br><b>' + Sid_txt[adn] + '</b></a><br><br>';
+    if (nads>1) {s+='<br><hr class="grey-line"><br>'};
+    document.writeln(s); adshown[adn]=1;
+  }
+}
