@@ -24,9 +24,14 @@ Below is the dictionary output created from the hand-labeled LDA output (185 LDA
 Use saved LDA model to predict topics for incoming queries:
 
 ### Request: 'To what extent can the government / Central Bank influence the macro-economy?'
-### primary topic: global macroeconomics
+##### primary topic: global macroeconomics
 
 Provide dendrogram plot of topics, with focus on topics relevant to the problem statement, specifically Healthcare and Technology:
 
 ![newplot (2)](https://user-images.githubusercontent.com/37546038/128777400-79a76175-042d-47a3-a67c-dff6d1d34865.png)
+
+## Overall System Architecture:
+
+![image](https://user-images.githubusercontent.com/37546038/128779412-3f64dc9f-51b0-4fe2-bfbf-e5d0eeedd6b9.png)
+
 
